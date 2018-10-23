@@ -4,7 +4,7 @@ public class ImpDatos {
 
     private float km;
     private float litros;
-    private float vMed;
+    private float velocidadMedia;
     private float pGas;
     private float ceur;
     private float lmed;
@@ -16,12 +16,12 @@ public class ImpDatos {
     public ImpDatos(float km, float litros, float vMed, float pGas) {
         this.km = km;
         this.litros = litros;
-        this.vMed = vMed;
+        this.velocidadMedia = vMed;
         this.pGas = pGas;
     }
 
     public float getTempo() {
-        float tem = km / vMed;
+        float tem = km / velocidadMedia;
         return tem;
     }
 
@@ -36,16 +36,16 @@ public class ImpDatos {
         return eur;
     }
 
-    public float vMed() {
-        float vmed = vMed;
-        return vmed;
+    public float velocidadMedia() {
+        float velocidadMed = velocidadMedia;
+        return velocidadMed;
     }
 
     public void setkm(float km) {
         this.km = km;
     }
 
-    public float getKms() {
+    public float getKm() {
         return km;
     }
 
@@ -57,11 +57,11 @@ public class ImpDatos {
         return litros;
     }
 
-    public void setpGas(float pGas) {
+    public void setPrecioGasolina(float pGas) {
         this.pGas = pGas;
     }
 
-    public float getpGas() {
+    public float getPrecioGasolina() {
         return pGas;
     }
 }
